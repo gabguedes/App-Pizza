@@ -24,5 +24,11 @@ class DetalheDoPedidoActivity : AppCompatActivity() {
             intent.getParcelableExtra("pedido")
         }
         Toast.makeText(this, pedido?.nomeCliente, Toast.LENGTH_LONG).show()
+
+
+        binding.tvNomeCliente.text = pedido?.nomeCliente
+        binding.tvEscolhasPizzaCliente.text = pedido?.sabores.toString()
+        binding.tvTamanhoDaPizzaCliente.text = pedido?.tamanho
+        binding.tvFormaPagamentoCliente.text = pedido?.tamanho
     }
 }
